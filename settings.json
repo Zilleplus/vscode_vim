@@ -1,0 +1,59 @@
+{
+    "vim.leader": "K",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "g"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ],
+        },
+        { // Not sure if this is correct...
+            "before" : ["<leader>", "c", "a"],
+            "commands" : [ "workbench.action.terminal.showQuickFixes" ],
+            "when": "terminalFocus"
+        },
+        {
+            "before": ["u"], 
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo", 
+                    "args": []
+                }
+            ] 
+        },
+        {
+            "before": ["<C-r>"], 
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo", 
+                    "args": []
+                }
+            ] 
+        }  
+    ]
+}

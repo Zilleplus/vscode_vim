@@ -1,0 +1,37 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "shift+l",
+        "command": "-notebook.toggleLineNumbers",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    { 
+        "key": "ctrl+k",
+        "command": "goToPreviousReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+]
